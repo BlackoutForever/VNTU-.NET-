@@ -8,8 +8,10 @@ namespace Blackout.TaskPlanner.Domain.Logic
 
         public WorkItem[] CreatePlan(WorkItem[] items)
         {
-            items = Sort(items);
-            var listItems = items.ToList();
+            //items = Sort(items);
+            List<WorkItem> listItems = items.ToList();
+
+            listItems.OrderBy(w => w.Title);
 
             listItems.Sort(new TaskComparer());
                     

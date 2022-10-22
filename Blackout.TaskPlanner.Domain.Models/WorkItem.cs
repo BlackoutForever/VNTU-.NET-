@@ -16,11 +16,13 @@ namespace Blackout.TaskPlanner.Domain.Models
         // Constructors
         // 
         public WorkItem() {
-            DueDate = SetWorkItemDueDate();
-            Priority = SetWorkitemPriority();
-            Complexity = SetWorkitemComplexity();
             Title = SetWorkItemTitle();
             Description = SetWorkItemDescription();
+
+            DueDate = SetWorkItemDueDate();
+
+            Priority = SetWorkitemPriority();
+            Complexity = SetWorkitemComplexity();
 
             ToString();
         }
@@ -28,21 +30,31 @@ namespace Blackout.TaskPlanner.Domain.Models
         //
         // Methods
         //
-        public override string ToString() => $"{Title}: {Description} | due {DueDate.ToString("dd.MM.yyyy")}, {Priority.ToString().ToUpper()} priority | {Complexity} | {IsCompleted} | {CreationDate.Date}.";
+        public override string ToString() => $"{Title}: {Description} | due {DueDate.ToString("dd.MM.yyyy")}, {Priority.ToString().ToUpper()} priority | {Complexity} | {IsCompleted} | {CreationDate.ToString("dd.MM.yyyy")}.";
 
         // Prins the array of the WorkItems
         public static void PrintWorkItems(WorkItem[] workitem)
         {
+            Console.WriteLine("|----------------------------------------------");
             foreach (WorkItem item in workitem)
             {
-                Console.WriteLine(item);
+                Console.WriteLine("| " + item);
             }
+            Console.WriteLine("|----------------------------------------------");
         }
 
         /// Sets the Priority due to Enum.TryParse
         private Priority SetWorkitemPriority()
         {
-            Console.Write("Enter the priority of the task:\n None\n Low\n Medium\n High\n Urgent\n Your choice: ");
+            Console.WriteLine("|----------------------------------------------");
+            Console.Write("| Enter the priority of the task:\n" + 
+                          "| None\n" + 
+                          "| Low\n" + 
+                          "| Medium\n" + 
+                          "| High\n" + 
+                          "| Urgent\n" + 
+                          "|-----------------\n" + 
+                          "| Your choice: ");
             string enteredPriority = Console.ReadLine();
 
             if (Enum.TryParse(enteredPriority, true, out Priority priority) && ((enteredPriority != null) || enteredPriority != ""))
@@ -57,8 +69,17 @@ namespace Blackout.TaskPlanner.Domain.Models
         // Sets the Complexity due to Enum.TryParse
         private Complexity SetWorkitemComplexity()
         {
-            Console.Write("Enter the complexity of the task:\n None\n Minutes\n Hours\n Days\n Weeks\n Your choice: ");
+            Console.WriteLine("|----------------------------------------------");
+            Console.Write("| Enter the complexity of the task:\n" + 
+                          "| None\n" + 
+                          "| Minutes\n" +
+                          "| Hours\n" + 
+                          "| Days\n" + 
+                          "| Weeks\n" + 
+                          "|-----------------\n" + 
+                          "| Your choice: ");
             string enteredComplexity = Console.ReadLine();
+            Console.WriteLine("|----------------------------------------------");
 
             if (Enum.TryParse(enteredComplexity, true, out Complexity complexity) && ((enteredComplexity != null) || enteredComplexity != ""))
             {
@@ -72,7 +93,8 @@ namespace Blackout.TaskPlanner.Domain.Models
         // Sets the Due Date
         private DateTime SetWorkItemDueDate()
         {
-            Console.Write("Enter the due date of the task:");
+            Console.WriteLine("|----------------------------------------------");
+            Console.Write("| Enter the due date of the task: ");
             string enteredDueDate = Console.ReadLine();
 
             return DateTime.Parse(enteredDueDate);
@@ -80,7 +102,8 @@ namespace Blackout.TaskPlanner.Domain.Models
 
         // Sets the Title 
         private string SetWorkItemTitle() {
-            Console.Write("Enter the title of the task:");
+            Console.WriteLine("|----------------------------------------------");
+            Console.Write("| Enter the title of the task: ");
             string enteredTitle = Console.ReadLine();
             if (enteredTitle == "" || enteredTitle == " ") return "TaskItem Title";
 
@@ -90,7 +113,8 @@ namespace Blackout.TaskPlanner.Domain.Models
         //Sets the Description
         private string SetWorkItemDescription()
         {
-            Console.Write("Enter the description of the task:");
+            Console.WriteLine("|----------------------------------------------");
+            Console.Write("| Enter the description of the task: ");
             string enteredDescription = Console.ReadLine();
             if (enteredDescription == "" || enteredDescription == " ") return "TaskItem Description";
 

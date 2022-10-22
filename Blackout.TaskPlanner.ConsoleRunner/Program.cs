@@ -22,16 +22,19 @@ namespace Blackout.TaskPlanner.ConsoleRunner
 
                     for (int i = 0; i < numberOfTasks; i++)
                     {
-                        workItems.Append(new WorkItem());
+                        workItems[i] = new WorkItem();
                     }
 
+                    
                     WorkItem.PrintWorkItems(workItems);
-                    Console.WriteLine("-------------------------------------");
+                    
 
 
                     workItems = stp.CreatePlan(workItems);
 
                     WorkItem.PrintWorkItems(workItems);
+
+                    
 
                     return;
                 }
