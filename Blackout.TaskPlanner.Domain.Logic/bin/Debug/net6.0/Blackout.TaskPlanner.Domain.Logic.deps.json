@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Blackout.TaskPlanner.Domain.Logic/1.0.0": {
+        "dependencies": {
+          "Blackout.TaskPlanner.Domain.Models": "1.0.0"
+        },
+        "runtime": {
+          "Blackout.TaskPlanner.Domain.Logic.dll": {}
+        }
+      },
+      "Blackout.TaskPlanner.Domain.Models/1.0.0": {
+        "runtime": {
+          "Blackout.TaskPlanner.Domain.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Blackout.TaskPlanner.Domain.Logic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Blackout.TaskPlanner.Domain.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Blackout.TaskPlanner.Domain.Logic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blackout.TaskPlanner.Domain.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Blackout.TaskPlanner.Domain.Logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blackout.TaskPlanner.Domain.Logic.dll": {}
+        }
+      },
+      "Blackout.TaskPlanner.Domain.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Blackout.TaskPlanner.Domain.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blackout.TaskPlanner.Domain.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Blackout.TaskPlanner.Domain.Logic/1.0.0": {
+      "type": "project",
+      "path": "../Blackout.TaskPlanner.Domain.Logic/Blackout.TaskPlanner.Domain.Logic.csproj",
+      "msbuildProject": "../Blackout.TaskPlanner.Domain.Logic/Blackout.TaskPlanner.Domain.Logic.csproj"
+    },
+    "Blackout.TaskPlanner.Domain.Models/1.0.0": {
+      "type": "project",
+      "path": "../Blackout.TaskPlanner.Domain.Models/Blackout.TaskPlanner.Domain.Models.csproj",
+      "msbuildProject": "../Blackout.TaskPlanner.Domain.Models/Blackout.TaskPlanner.Domain.Models.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Blackout.TaskPlanner.Domain.Logic >= 1.0.0",
+      "Blackout.TaskPlanner.Domain.Models >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Denys\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Projects\\C#_edu\\#Blackout\\Blackout.TaskPlanner\\Blackout.TaskPlanner.ConsoleRunner\\Blackout.TaskPlanner.ConsoleRunner.csproj",
+      "projectName": "Blackout.TaskPlanner.ConsoleRunner",
+      "projectPath": "D:\\Projects\\C#_edu\\#Blackout\\Blackout.TaskPlanner\\Blackout.TaskPlanner.ConsoleRunner\\Blackout.TaskPlanner.ConsoleRunner.csproj",
+      "packagesPath": "C:\\Users\\Denys\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\C#_edu\\#Blackout\\Blackout.TaskPlanner\\Blackout.TaskPlanner.ConsoleRunner\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Denys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "D:\\Projects\\C#_edu\\#Blackout\\Blackout.TaskPlanner\\Blackout.TaskPlanner.Domain.Logic\\Blackout.TaskPlanner.Domain.Logic.csproj": {
+              "projectPath": "D:\\Projects\\C#_edu\\#Blackout\\Blackout.TaskPlanner\\Blackout.TaskPlanner.Domain.Logic\\Blackout.TaskPlanner.Domain.Logic.csproj"
+            },
+            "D:\\Projects\\C#_edu\\#Blackout\\Blackout.TaskPlanner\\Blackout.TaskPlanner.Domain.Models\\Blackout.TaskPlanner.Domain.Models.csproj": {
+              "projectPath": "D:\\Projects\\C#_edu\\#Blackout\\Blackout.TaskPlanner\\Blackout.TaskPlanner.Domain.Models\\Blackout.TaskPlanner.Domain.Models.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
