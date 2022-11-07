@@ -1,4 +1,5 @@
 ﻿using Blackout.TaskPlanner.Domain.Models;
+using Blackout.TaskPlanner.Domain.Logic;
 
 namespace Blackout.TaskPlanner.Domain.Logic
 {
@@ -11,7 +12,7 @@ namespace Blackout.TaskPlanner.Domain.Logic
             
             List<WorkItem> listItems = items.ToList();
 
-            listItems.OrderBy(w => w.Title);
+            listItems = TaskComparer.SortItemsByTitle(listItems);
 
             listItems.Sort(new TaskComparer());
                     
