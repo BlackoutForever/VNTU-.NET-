@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blackout.TaskPlanner.DataAccess\Blackout.TaskPlanner.DataAccess.csproj" />
     <ProjectReference Include="..\Blackout.TaskPlanner.Domain.Logic\Blackout.TaskPlanner.Domain.Logic.csproj" />
     <ProjectReference Include="..\Blackout.TaskPlanner.Domain.Models\Blackout.TaskPlanner.Domain.Models.csproj" />
   </ItemGroup>

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dEWZxxgllw4zT9FNiV1bp72KxDVkhakrvKQHoaP+m961nJ80S1WS0H47FQwqxKhUxVL7FvZnWWVlxj2dcJGBqA==",
+  "dgSpecHash": "1YHuNyXJgdBI7lhj49TOMwTPaUI8fK7+gao63Mz/mQxoTuxjFt0c2xgc6qJhswRJ+doFmCr0BrnbpbGD4IN0FA==",
   "success": true,
   "projectFilePath": "D:\\Projects\\C#_edu\\#Blackout\\Blackout.TaskPlanner\\Blackout.TaskPlanner.ConsoleRunner\\Blackout.TaskPlanner.ConsoleRunner.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Denys\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

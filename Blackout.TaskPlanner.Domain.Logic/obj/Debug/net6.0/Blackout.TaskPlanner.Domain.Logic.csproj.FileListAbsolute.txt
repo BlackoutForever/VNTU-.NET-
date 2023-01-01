@@ -13,3 +13,5 @@ D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.Domain.Lo
 D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.Domain.Logic\obj\Debug\net6.0\refint\Blackout.TaskPlanner.Domain.Logic.dll
 D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.Domain.Logic\obj\Debug\net6.0\Blackout.TaskPlanner.Domain.Logic.pdb
 D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.Domain.Logic\obj\Debug\net6.0\ref\Blackout.TaskPlanner.Domain.Logic.dll
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.Domain.Logic\bin\Debug\net6.0\Blackout.TaskPlanner.DataAccess.Abstraction.dll
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.Domain.Logic\bin\Debug\net6.0\Blackout.TaskPlanner.DataAccess.Abstraction.pdb

@@ -2,8 +2,10 @@
 
 namespace Blackout.TaskPlanner.Domain.Models
 {
+    
     public class WorkItem
     {
+        public Guid Id { get; set; }
         public DateTime CreationDate { get; set; } = DateTime.Now;
         public DateTime DueDate { get; set; }
         public Priority Priority { get; set; }
@@ -11,34 +13,62 @@ namespace Blackout.TaskPlanner.Domain.Models
         public string Title { get; set; }
         public string Description { get; set; }
         public bool IsCompleted { get; set; } = false;
-        
+
         //
         // Constructors
-        // 
-        public WorkItem() {
-            Title = SetWorkItemTitle();
-            Description = SetWorkItemDescription();
+        //
+        //
+        
+        public WorkItem(bool forClone = false) {
+            if (!forClone)
+            {
+                Title = SetWorkItemTitle();
+                Description = SetWorkItemDescription();
 
-            DueDate = SetWorkItemDueDate();
+                DueDate = SetWorkItemDueDate();
 
-            Priority = SetWorkitemPriority();
-            Complexity = SetWorkitemComplexity();
+                Priority = SetWorkitemPriority();
+                Complexity = SetWorkitemComplexity();
 
-            ToString();
+                ToString();
+            }
         }
+
+        public WorkItem() { }
+    
 
         //
         // Methods
         //
         public override string ToString() => $"{Title}: {Description} | due {DueDate.ToString("dd.MM.yyyy")}, {Priority.ToString().ToUpper()} priority | {Complexity} | {IsCompleted} | {CreationDate.ToString("dd.MM.yyyy")}.";
 
-        // Prins the array of the WorkItems
+
+        public WorkItem Clone()
+        {
+           return new WorkItem
+            {
+                CreationDate = CreationDate,
+                DueDate = DueDate,
+                Priority = Priority,
+                Complexity = Complexity,
+                Title = Title,
+                Description = Description,
+                IsCompleted = IsCompleted,
+
+            };
+        }
+        
+
+
+        // Prints the array of the WorkItems
         public static void PrintWorkItems(WorkItem[] workitem)
         {
+            int i = 1;
             Console.WriteLine("|----------------------------------------------");
             foreach (WorkItem item in workitem)
             {
-                Console.WriteLine("| " + item);
+                Console.WriteLine($"| {i}. " + item);
+                i++;
             }
             Console.WriteLine("|----------------------------------------------");
         }
@@ -55,6 +85,7 @@ namespace Blackout.TaskPlanner.Domain.Models
                           "| Urgent\n" + 
                           "|-----------------\n" + 
                           "| Your choice: ");
+
             string enteredPriority = Console.ReadLine();
 
             if (Enum.TryParse(enteredPriority, true, out Priority priority) && ((enteredPriority != null) || enteredPriority != ""))
@@ -97,6 +128,8 @@ namespace Blackout.TaskPlanner.Domain.Models
             Console.Write("| Enter the due date of the task: ");
             string enteredDueDate = Console.ReadLine();
 
+            if (enteredDueDate == "") return DateTime.Now;
+
             return DateTime.Parse(enteredDueDate);
         }
 
@@ -104,7 +137,7 @@ namespace Blackout.TaskPlanner.Domain.Models
         private string SetWorkItemTitle() {
             Console.WriteLine("|----------------------------------------------");
             Console.Write("| Enter the title of the task: ");
-            string enteredTitle = Console.ReadLine();
+            string? enteredTitle = Console.ReadLine();
             if (enteredTitle == "" || enteredTitle == " ") return "TaskItem Title";
 
             return enteredTitle;
@@ -120,5 +153,10 @@ namespace Blackout.TaskPlanner.Domain.Models
 
             return enteredDescription;
         }
+
+        //Sets the completion
+
+
+        
     }
 }
