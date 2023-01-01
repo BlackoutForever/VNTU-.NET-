@@ -1,4 +1,6 @@
-﻿using Blackout.TaskPlanner.Domain.Logic;
+﻿using Blackout.TaskPlanner.DataAccess;
+using Blackout.TaskPlanner.DataAccess.Abstraction;
+using Blackout.TaskPlanner.Domain.Logic;
 using Blackout.TaskPlanner.Domain.Models;
 
 namespace Blackout.TaskPlanner.ConsoleRunner
@@ -8,38 +10,89 @@ namespace Blackout.TaskPlanner.ConsoleRunner
         public static void Main(string[] args)
         {
             WorkItem[] workItems;
-            SimpleTaskPlanner stp = new();
-
+            
+            FileWorkItemRepository fileWorkItemRepository = new();
+            SimpleTaskPlanner stp = new(fileWorkItemRepository);
 
             while (true)
             {
-                Console.Write("Enter the number of the tasks you wanna create: ");
-                string userChoice = Console.ReadLine();
+                PrintMenu();
 
-                if (int.TryParse(userChoice, out int numberOfTasks))
+                Console.Write("Choose the option: ");
+                string? userChoice = Console.ReadLine();
+
+                if (userChoice == "A" || userChoice == "a")
                 {
-                    workItems = new WorkItem[numberOfTasks];
 
-                    for (int i = 0; i < numberOfTasks; i++)
-                    {
-                        workItems[i] = new WorkItem();
-                    }
+                    WorkItem newWorkItem = new WorkItem(false);
 
-                    
-                    WorkItem.PrintWorkItems(workItems);
-                    
+                    fileWorkItemRepository.Add(newWorkItem);
 
+                }
 
-                    workItems = stp.CreatePlan(workItems);
+                else if (userChoice == "B" || userChoice == "b")
+                {
 
+                    workItems = stp.CreatePlan();
+                    Console.WriteLine("The plan has been created:");
                     WorkItem.PrintWorkItems(workItems);
 
-                    
+                }
 
+                else if (userChoice == "M" || userChoice == "m")
+                {
+
+                    var tempWorkItems = fileWorkItemRepository.GetAll();
+
+                    WorkItem.PrintWorkItems(tempWorkItems);
+
+                    Console.Write(@"Choose the number of the task to mark as complited\uncomplited: ");
+
+                    int itemNumberToMark = int.Parse(Console.ReadLine());
+
+                    tempWorkItems[itemNumberToMark - 1].IsCompleted = fileWorkItemRepository.Update(tempWorkItems[itemNumberToMark - 1]);
+
+                    fileWorkItemRepository.SaveChanges();
+
+                }
+
+                else if (userChoice == "R" || userChoice == "r") {
+
+                    var tempWorkItems = fileWorkItemRepository.GetAll();
+
+                    WorkItem.PrintWorkItems(tempWorkItems);
+
+                    Console.Write("Choose the number of the task you want to delete: ");
+
+                    int itemNumberToDelete = int.Parse(Console.ReadLine());
+
+                    fileWorkItemRepository.Remove(tempWorkItems[itemNumberToDelete - 1].Id);
+
+                }
+
+                else if (userChoice == "p")
+                {
+
+                    WorkItem.PrintWorkItems(fileWorkItemRepository.GetAll());
+
+                }
+
+                else if (userChoice == "q" || userChoice == "Q")
+                {
                     return;
                 }
-                else Console.WriteLine("You've entered the wrong value! Try again...");
             }
-        }  
+        }
+
+        public static void PrintMenu()
+        {
+            Console.WriteLine("[A]dd work item\n" +
+                              "[B]uild a plan\n" +
+                              "[M]ark workitem as comlited\n" +
+                              "[R]emove a workitem\n" +
+                              "[Q]uit the app");
+        }
+
+        
     }
 }

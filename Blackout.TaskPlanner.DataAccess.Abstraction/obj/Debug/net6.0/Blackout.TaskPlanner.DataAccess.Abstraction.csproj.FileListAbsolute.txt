@@ -1,0 +1,15 @@
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.DataAccess.Abstraction\bin\Debug\net6.0\Blackout.TaskPlanner.DataAccess.Abstraction.deps.json
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.DataAccess.Abstraction\bin\Debug\net6.0\Blackout.TaskPlanner.DataAccess.Abstraction.dll
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.DataAccess.Abstraction\bin\Debug\net6.0\Blackout.TaskPlanner.DataAccess.Abstraction.pdb
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.DataAccess.Abstraction\bin\Debug\net6.0\Blackout.TaskPlanner.Domain.Models.dll
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.DataAccess.Abstraction\bin\Debug\net6.0\Blackout.TaskPlanner.Domain.Models.pdb
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.DataAccess.Abstraction\obj\Debug\net6.0\Blackout.TaskPlanner.DataAccess.Abstraction.csproj.AssemblyReference.cache
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.DataAccess.Abstraction\obj\Debug\net6.0\Blackout.TaskPlanner.DataAccess.Abstraction.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.DataAccess.Abstraction\obj\Debug\net6.0\Blackout.TaskPlanner.DataAccess.Abstraction.AssemblyInfoInputs.cache
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.DataAccess.Abstraction\obj\Debug\net6.0\Blackout.TaskPlanner.DataAccess.Abstraction.AssemblyInfo.cs
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.DataAccess.Abstraction\obj\Debug\net6.0\Blackout.TaskPlanner.DataAccess.Abstraction.csproj.CoreCompileInputs.cache
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.DataAccess.Abstraction\obj\Debug\net6.0\Blackout.TaskPlanner.DataAccess.Abstraction.csproj.CopyComplete
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.DataAccess.Abstraction\obj\Debug\net6.0\Blackout.TaskPlanner.DataAccess.Abstraction.dll
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.DataAccess.Abstraction\obj\Debug\net6.0\refint\Blackout.TaskPlanner.DataAccess.Abstraction.dll
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.DataAccess.Abstraction\obj\Debug\net6.0\Blackout.TaskPlanner.DataAccess.Abstraction.pdb
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.DataAccess.Abstraction\obj\Debug\net6.0\ref\Blackout.TaskPlanner.DataAccess.Abstraction.dll

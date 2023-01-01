@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Blackout.TaskPlanner.DataAccess.Abstraction/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blackout.TaskPlanner.Domain.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Blackout.TaskPlanner.DataAccess.Abstraction.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blackout.TaskPlanner.DataAccess.Abstraction.dll": {}
+        }
+      },
       "Blackout.TaskPlanner.Domain.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -15,6 +28,11 @@
     }
   },
   "libraries": {
+    "Blackout.TaskPlanner.DataAccess.Abstraction/1.0.0": {
+      "type": "project",
+      "path": "../Blackout.TaskPlanner.DataAccess.Abstraction/Blackout.TaskPlanner.DataAccess.Abstraction.csproj",
+      "msbuildProject": "../Blackout.TaskPlanner.DataAccess.Abstraction/Blackout.TaskPlanner.DataAccess.Abstraction.csproj"
+    },
     "Blackout.TaskPlanner.Domain.Models/1.0.0": {
       "type": "project",
       "path": "../Blackout.TaskPlanner.Domain.Models/Blackout.TaskPlanner.Domain.Models.csproj",
@@ -23,6 +41,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Blackout.TaskPlanner.DataAccess.Abstraction >= 1.0.0",
       "Blackout.TaskPlanner.Domain.Models >= 1.0.0"
     ]
   },
@@ -53,6 +72,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\Projects\\C#_edu\\#Blackout\\Blackout.TaskPlanner\\Blackout.TaskPlanner.DataAccess.Abstraction\\Blackout.TaskPlanner.DataAccess.Abstraction.csproj": {
+              "projectPath": "D:\\Projects\\C#_edu\\#Blackout\\Blackout.TaskPlanner\\Blackout.TaskPlanner.DataAccess.Abstraction\\Blackout.TaskPlanner.DataAccess.Abstraction.csproj"
+            },
             "D:\\Projects\\C#_edu\\#Blackout\\Blackout.TaskPlanner\\Blackout.TaskPlanner.Domain.Models\\Blackout.TaskPlanner.Domain.Models.csproj": {
               "projectPath": "D:\\Projects\\C#_edu\\#Blackout\\Blackout.TaskPlanner\\Blackout.TaskPlanner.Domain.Models\\Blackout.TaskPlanner.Domain.Models.csproj"
             }
@@ -84,7 +106,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

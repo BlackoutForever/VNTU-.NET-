@@ -8,10 +8,19 @@
     ".NETCoreApp,Version=v6.0": {
       "Blackout.TaskPlanner.Domain.Logic/1.0.0": {
         "dependencies": {
+          "Blackout.TaskPlanner.DataAccess.Abstraction": "1.0.0",
           "Blackout.TaskPlanner.Domain.Models": "1.0.0"
         },
         "runtime": {
           "Blackout.TaskPlanner.Domain.Logic.dll": {}
+        }
+      },
+      "Blackout.TaskPlanner.DataAccess.Abstraction/1.0.0": {
+        "dependencies": {
+          "Blackout.TaskPlanner.Domain.Models": "1.0.0"
+        },
+        "runtime": {
+          "Blackout.TaskPlanner.DataAccess.Abstraction.dll": {}
         }
       },
       "Blackout.TaskPlanner.Domain.Models/1.0.0": {
@@ -23,6 +32,11 @@
   },
   "libraries": {
     "Blackout.TaskPlanner.Domain.Logic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Blackout.TaskPlanner.DataAccess.Abstraction/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -18,3 +18,8 @@ D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.ConsoleRu
 D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.ConsoleRunner\bin\Debug\net6.0\Blackout.TaskPlanner.Domain.Logic.pdb
 D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.ConsoleRunner\bin\Debug\net6.0\Blackout.TaskPlanner.Domain.Models.pdb
 D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.ConsoleRunner\obj\Debug\net6.0\Blackout.TaskPlanner.ConsoleRunner.csproj.CopyComplete
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.ConsoleRunner\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.ConsoleRunner\bin\Debug\net6.0\Blackout.TaskPlanner.DataAccess.Abstraction.dll
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.ConsoleRunner\bin\Debug\net6.0\Blackout.TaskPlanner.DataAccess.dll
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.ConsoleRunner\bin\Debug\net6.0\Blackout.TaskPlanner.DataAccess.pdb
+D:\Projects\C#_edu\#Blackout\Blackout.TaskPlanner\Blackout.TaskPlanner.ConsoleRunner\bin\Debug\net6.0\Blackout.TaskPlanner.DataAccess.Abstraction.pdb
